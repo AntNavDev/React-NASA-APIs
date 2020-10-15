@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.rover-list .active {
+ 
+    box-shadow: 0 0 15px rgb(20, 120, 120);
+
+}

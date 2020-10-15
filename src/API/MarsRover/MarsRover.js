@@ -31,10 +31,10 @@ class MarsRover extends React.Component {
             <div>
                 Mars Rover Component
                 <button onClick={ () => this.handleAPICall() }>Get Mars Photo</button>
-                <div>
-                    <button onClick={ (rover) => this.handleRoverChange('curiosity') }>Curiosity</button>
-                    <button onClick={ (rover) => this.handleRoverChange('opportunity') }>Opportunity</button>
-                    <button onClick={ (rover) => this.handleRoverChange('spirit') }>Spirit</button>
+                <div className="rover-list">
+                    <button className={ this.state.rover === 'curiosity' ? 'active m-2' : 'm-2' } onClick={ (rover) => this.handleRoverChange('curiosity') }>Curiosity</button>
+                    <button className={ this.state.rover === 'opportunity' ? 'active m-2' : 'm-2' } onClick={ (rover) => this.handleRoverChange('opportunity') }>Opportunity</button>
+                    <button className={ this.state.rover === 'spirit' ? 'active m-2' : 'm-2' } onClick={ (rover) => this.handleRoverChange('spirit') }>Spirit</button>
                 </div>
             </div>
         );
